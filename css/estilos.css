@@ -18,6 +18,22 @@ img {
 	-khtml-box-shadow: 10px 10px 5px #02010a;
   }
 
+.rotateimgc4 {
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+	 transition:         transform .8s ease-in-out;
+	  }
+.rotateimgc4:hover {
+	-webkit-transform: rotate(10deg);
+	transform: rotate(10deg);
+	color:#82c3a6;
+	border: 2px;
+	  }
+.traslateimgc5:hover {  
+	transform:translate(-5px, -20px); 
+	color: #82c3a6;
+	border: 2px;
+}
+
 /* Control de Renderizado */
 .container {
 	margin: 0;
@@ -53,13 +69,13 @@ img {
 .c4 {
 	color: black;
 	background-color: #d5c75f;
-	border-radius: 2px;
+	border-radius: 1px;
 }
 
 .c5 {
 	color: white;
 	background-color: #d5c75f;
-	border-radius: 2px;
+	border-radius: 1px;
 }
 
 .container {
@@ -108,26 +124,67 @@ img {
 body {
 	margin-left: 15%;
 	width: 70%;
-	background-color: #000000;
+	background-color: #02010a;
 	font-family: myFont;
-	font-size: 18;
+	font-size: 24;
 }
 /*Personalización de vínculos*/
-a:link, a:visited {
+/*.a1:link, .a1:visited {
 	background-color: green;
 	color: white;
 	padding: 10px 20px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 18;
+	font-size: 24;
+  }*/
+  .topnav {
+	float: right;
   }
+  ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	background-color: #02010a;
+	text-align: right;
+  }
+  
+  li a {
+	display: block;
+	color: white;
+	padding: 8px 16px;
+	text-decoration: none;
+	text-align: right;
+  }
+  
+  /* Change the link color on hover */
+  li a:hover {
+	background-color: #555;
+	color: white;
+  }
+
   footer {
 	clear: both;
 	border-top: solid 10px #605B56;
+	border-radius: 2px;
 	padding-top: 10px;
 	margin-top: 15px;
 	text-align: center;
 	font-family: myFont;
 	color: lightblue;
+}
+.imgfooter {
+	border-radius: 2px solid #02010a;;
+	padding: 5px;
+	width: 30px;
+	display: block;
+	margin: auto;
+	display: inline;
+	font-size: 18;
+	color: skyblue;
+}
+.a2:link{
+	background-color: #000000;
+	color: white;
 }
