@@ -1,0 +1,233 @@
+/* Fuente Personalizada */
+@font-face {
+	font-family: myFont;
+	src: url(../font/DancingScript.ttf);
+}
+
+header {
+	display: flex;
+	flex-flow: row wrap;
+	background-color: #5b7989;
+	padding-left: 20px;
+    padding-right: 20px;
+    min-width: 150px;
+    max-width: 862px;
+    margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+  }
+  
+  header h1{
+	/*width: 50%;*/
+	color: white;
+    text-shadow: 2px 2px black;
+    font-family: myFont;
+  }
+  .menu {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	background-color: #5b7989;
+  }
+  
+  .menu div{
+	text-shadow: 2px 2px #02010a;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    box-sizing: border-box;
+	min-width: 150px;
+	max-width: 900px;
+	padding: 20px;
+  }
+  .menu div a{
+	color: white;
+  }
+
+@keyframes bote {
+		0%, 60%, 100% {
+		  -webkit-transform: translateY(0);
+		}
+	  
+		40% {
+			-webkit-transform: translateY(0);
+			-webkit-transform: translateY(-30px);
+		}
+	  
+		65% {
+			-webkit-transform: translateY(-15px);
+		}
+	}
+#bote div{
+	animation-name: bote;
+	animation-duration: 2s;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	animation-delay: 1s;
+}
+
+.img {
+	border-radius: 2px solid #02010a;;
+	padding: 5px;
+	width: 350px;
+	display: block;
+	margin: auto;
+    border: 1px solid #02010a;
+    box-shadow: 10px 10px 5px #02010a;
+    -moz-box-shadow: 10px 10px 5px #02010a;
+    -webkit-box-shadow: 10px 10px 5px #02010a;
+	-khtml-box-shadow: 10px 10px 5px #02010a;
+  }
+
+body {
+	background-color: #02010a;
+	font-family: myFont;
+	font-size: 18;
+}
+.container {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.container div {
+	box-sizing: border-box;
+	min-width: 150px;
+    max-width: 900px;
+    padding: 10px;
+}
+
+.container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+.c1 {
+	color: white;
+	background-color: #5b7989;
+	border-radius: 10px;
+	text-shadow: 2px 2px 2px #02010a;
+}
+
+.c2 {
+	color: #02010a;
+	background-color: #02010a;
+	border-radius: 10px;
+}
+
+.c3 {
+	color: #02010a;
+	background-color: #82c3a6;
+	border-radius: 10px;
+}
+
+.c4 {
+	color: #02010a;
+	background-color: #d5c75f;
+	border-radius: 10px;
+	box-shadow: #82c3a6;
+}
+
+.c5 {
+	color: white;
+	background-color: #d5c75f;
+	border-radius: 10px;
+	box-shadow: #82c3a6;
+}
+.c1, .c2, .c3, .c4, .c5 {
+	width: 100%;
+}
+
+@media (min-width: 600px) {
+	.c3 {
+		width: 100%;
+	}
+	.c4, .c5 {
+		width: 100%;
+	}
+}
+
+@media (min-width: 800px) {
+	.c1 {
+		width: 100%;
+	}
+
+	.c2 {
+		width: 100%;
+	}
+
+	.c3 {
+		width: 100%;
+	}
+
+	.c4, .c5 {
+		width: 50.00%;
+	}
+
+	.container {
+		width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+/** Efecto de Imágenes**/
+.rotateimgc4 {
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+	 transition:         transform .8s ease-in-out;
+	  }
+.rotateimgc4:hover {
+	-webkit-transform: rotate(10deg);
+	transform: rotate(10deg);
+	color:#82c3a6;
+	border: 1px solid #02010a;
+	  }
+.traslateimgc5:hover {  
+	transform:translate(-5px, -20px); 
+	color: #82c3a6;
+	border: 2px solid #02010a;;
+}
+
+/** Pie de Página **/
+li a {
+	display: block;
+	color: white;
+	padding: 8px 16px;
+	text-decoration: none;
+	text-align: right;
+	display: inline;
+  }
+  
+li a:hover {
+	background-color: #555;
+	color: white;
+}
+
+footer {
+	clear: both;
+	border-radius: 10px;
+	padding-top: 10px;
+	margin-top: 15px;
+	text-align: center;
+	font-family: myFont;
+	color: black;
+	background-color:#C6d5c5;
+}
+.imgfooter {
+	width: 20px;
+	display: block;
+	margin: auto;
+	display: inline;
+	color: #C6d5c5;	
+}
+.a2:link{
+	background-color: #C6d5c5;
+	color: black;
+}
+.table {
+  width:100%;
+  border-collapse: collapse;
+  border-spacing: 1px;
+  text-align: center;
+}
