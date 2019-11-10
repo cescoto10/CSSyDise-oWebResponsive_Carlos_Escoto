@@ -42,6 +42,11 @@ header {
   }
   .menu div a{
 	color: white;
+	display: block;
+	color: white;
+	text-decoration: none;
+	text-align: right;
+	display: inline;
   }
 
 @keyframes bote {
@@ -58,6 +63,14 @@ header {
 			-webkit-transform: translateY(-15px);
 		}
 	}
+#bote header{
+	animation-name: bote;
+	animation-duration: 2s;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	animation-delay: 1s;
+}
 #bote div{
 	animation-name: bote;
 	animation-duration: 2s;
@@ -66,11 +79,32 @@ header {
 	-o-animation-delay: 1s;
 	animation-delay: 1s;
 }
+#bote h1{
+	animation-name: bote;
+	animation-duration: 2s;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	animation-delay: 1s;
+}
+
 
 .img {
 	border-radius: 2px solid #02010a;;
 	padding: 5px;
-	width: 350px;
+	width: 550px;
+	display: block;
+	margin: auto;
+    border: 1px solid #02010a;
+    box-shadow: 10px 10px 5px #02010a;
+    -moz-box-shadow: 10px 10px 5px #02010a;
+    -webkit-box-shadow: 10px 10px 5px #02010a;
+	-khtml-box-shadow: 10px 10px 5px #02010a;
+  }
+  .img2 {
+	border-radius: 2px solid #02010a;;
+	padding: 5px;
+	width: 660px;
 	display: block;
 	margin: auto;
     border: 1px solid #02010a;
@@ -107,37 +141,54 @@ body {
 .c1 {
 	color: white;
 	background-color: #5b7989;
-	border-radius: 10px;
+	border-radius: 2px;
 	text-shadow: 2px 2px 2px #02010a;
 }
 
 .c2 {
 	color: #02010a;
 	background-color: #02010a;
-	border-radius: 10px;
+	border-radius: 2px;
 }
 
 .c3 {
 	color: #02010a;
 	background-color: #82c3a6;
-	border-radius: 10px;
+	border-radius: 2px;
 }
 
 .c4 {
 	color: #02010a;
 	background-color: #d5c75f;
-	border-radius: 10px;
+	border-radius: 2px;
 	box-shadow: #82c3a6;
 }
 
 .c5 {
 	color: white;
 	background-color: #d5c75f;
-	border-radius: 10px;
+	border-radius: 2px;
 	box-shadow: #82c3a6;
 }
 .c1, .c2, .c3, .c4, .c5 {
 	width: 100%;
+	
+	.img {
+		border-radius: 2px solid #02010a;
+		padding: 5px;
+		width: 360px;
+		display: block;
+		margin: auto;
+		border: 1px solid 
+	}
+	.img2 {
+		border-radius: 2px solid #02010a;
+		padding: 5px;
+		width: 260px;
+		display: block;
+		margin: auto;
+		border: 1px solid 
+	}
 }
 
 @media (min-width: 600px) {
@@ -146,6 +197,22 @@ body {
 	}
 	.c4, .c5 {
 		width: 100%;
+	}
+	.img {
+		border-radius: 2px solid #02010a;
+		padding: 5px;
+		width: 360px;
+		display: block;
+		margin: auto;
+		border: 1px solid 
+	}
+	.img2 {
+		border-radius: 2px solid #02010a;
+		padding: 5px;
+		width: 360px;
+		display: block;
+		margin: auto;
+		border: 1px solid 
 	}
 }
 
@@ -170,6 +237,68 @@ body {
 		width: 900px;
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	.img {
+		border-radius: 2px solid #02010a;
+		padding: 5px;
+		width: 450px;
+		display: block;
+		margin: auto;
+		border: 1px solid 
+	}
+	.img2 {
+		border-radius: 2px solid #02010a;
+		padding: 5px;
+		width: 400px;
+		display: block;
+		margin: auto;
+		border: 1px solid 
+	}
+	.PieP {  
+		display: grid;  
+		grid-gap: 5px;  
+		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+		grid-template-rows: repeat(2, 100px);  
+	}
+}
+
+@media (max-width: 699px){
+	.c1, .c2, .c3, .c4, .c5 {
+		width: 100%;
+	}
+	
+	.img {
+		border-radius: 2px solid #02010a;
+		padding: 5px;
+		width: 260px;
+		display: block;
+		margin: auto;
+		border: 1px solid 
+	}
+	.img2 {
+		border-radius: 2px solid #02010a;
+		padding: 5px;
+		width: 260px;
+		display: block;
+		margin: auto;
+		border: 1px solid 
+	}
+	.menu div {
+		text-shadow: 2px 2px 
+		#02010a;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		box-sizing: border-box;
+		min-width: 85px;
+		padding: 20px;
+	}
+	.PieP {  
+		display: grid;  
+		grid-gap: 5px;  
+		grid-template-columns: repeat(1, minmax(100px, 1fr));
+		grid-template-rows: repeat(2, 100px);  
 	}
 }
 /** Efecto de Imágenes**/
@@ -202,6 +331,7 @@ li a {
 li a:hover {
 	background-color: #555;
 	color: white;
+	text-decoration: none;
 }
 
 footer {
@@ -231,3 +361,4 @@ footer {
   border-spacing: 1px;
   text-align: center;
 }
+
